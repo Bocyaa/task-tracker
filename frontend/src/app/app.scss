@@ -1,0 +1,38 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  background-color: rgb(0, 132, 255);
+  padding: 0;
+  margin: 0;
+  border-radius: 2rem 2rem 0 0;
+  margin: 1rem 1rem 0 1rem;
+}
+
+div {
+  display: flex;
+  gap: 1rem;
+}
+
+a {
+  color: black;
+  font-size: large;
+  font-weight: 600;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  background-color: white;
+  border-radius: 2rem;
+  text-decoration: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border: 0.2rem solid rgb(0, 132, 255);
+}
+
+a:hover {
+  color: rgb(239, 163, 0);
+  transition: color 0.1s;
+}
+
+a:active {
+  color: black;
+  scale: 0.9;
+}

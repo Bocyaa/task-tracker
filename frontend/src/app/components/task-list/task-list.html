@@ -1,1 +1,24 @@
-<p>task-list works!</p>
+<div class="task-list-page">
+  <h2>Tasks</h2>
+
+  <p *ngIf="loading">Loading...</p>
+
+  <div class="container">
+    <ol>
+      <li *ngFor="let t of tasks">
+        <input
+          type="checkbox"
+          [checked]="t.completed"
+          (change)="toggleTask(t)"
+        />
+        <div class="title-button-con">
+          <span>{{ t.title }}</span>
+          <button class="remove-button" (click)="remove(t.id!)">Remove</button>
+        </div>
+      </li>
+    </ol>
+    <a routerLink="/add" class="add-link">Add Task</a>
+  </div>
+
+  <p *ngIf="!loading && !tasks.length">No tasks yet. Add one!</p>
+</div>
