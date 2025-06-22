@@ -51,6 +51,10 @@ task-tracker/
 
 ---
 
+## Screenshots
+
+![Task List View](./frontend/screenshots/TaskListPage.png)
+
 ## 🚀 Getting Started
 
 ### Prerequisites
